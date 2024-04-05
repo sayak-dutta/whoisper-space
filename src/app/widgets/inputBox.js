@@ -2,6 +2,7 @@ import { Input, Tooltip } from "antd";
 import Image from "next/image";
 import React, { useState } from "react";
 import styles from "./inputbox.module.css";
+import LogoIcon from "../../../public/blue.svg";
 
 function InputBox() {
 	const [message, setMessage] = useState("");

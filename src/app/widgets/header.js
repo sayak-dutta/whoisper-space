@@ -5,7 +5,7 @@ function Header() {
 	return (
 		<div>
 			<Image
-				width={1000}
+				width={200}
 				height={50}
 				src={"./logo-alt.svg"}
 				alt="logo"

@@ -50,3 +50,9 @@
 	padding: 1rem;
 	cursor: pointer;
 }
+
+@media only screen and (max-width: 600px) {
+	.inputContainer {
+		width: 90%;
+	}
+}
