@@ -1,23 +1,9 @@
 'use client'
-import { randomInRange } from "@/utils/page";
-import { Col, Image, Row } from "antd";
-import { useEffect } from "react";
-function scatterClouds(cloudElements) {
-	cloudElements.forEach((cloudElement) => {
-		const xOffset = randomInRange(-50, 50); // Adjust range for desired scatter
-		const yOffset = randomInRange(-20, 20); // Adjust range for desired vertical movement
 
-		cloudElement.style.transform = `translate(${xOffset}px, ${yOffset}px)`;
-	});
-}
+import { Col, Image, Row } from "antd";
+
 
 export default function Home() {
-	const cloudElements = document.querySelectorAll('.cloud'); // Cache cloud elements
-
-	// Call scatterClouds on component mount or update
-	useEffect(() => {
-		scatterClouds(cloudElements);
-	}, []); // Empty dependency array: run once on mount
 
 	return (
 		<>
